@@ -1,0 +1,356 @@
+main() <int main (int argc, char *argv[]) at /Volumes/trash/trash/ccze/src/ccze-cssdump.c:81>:
+    argp_parse() <error_t argp_parse (const struct argp *argps, int argc, char **argv, unsigned flags, int arg_index, void *input) at /Volumes/trash/trash/ccze/src/ccze-compat.c:87>:
+        ccze_calloc() <void *ccze_calloc (size_t nmemb, size_t size) at /Volumes/trash/trash/ccze/src/ccze-compat.c:66>:
+            calloc()
+            exit()
+        ccze_malloc() <void *ccze_malloc (size_t size) at /Volumes/trash/trash/ccze/src/ccze-compat.c:48>:
+            malloc()
+            exit()
+        XSREALLOC()
+        getopt_long()
+        getopt()
+        printf()
+        exit()
+        free()
+    ccze_color_init() <void ccze_color_init (void) at /Volumes/trash/trash/ccze/src/ccze-color.c:567>:
+        ccze_color_init_raw_ansi() <void ccze_color_init_raw_ansi (void) at /Volumes/trash/trash/ccze/src/ccze-color.c:482>:
+        COLOR_PAIR()
+    ccze_color_load() <void ccze_color_load (const char *fn) at /Volumes/trash/trash/ccze/src/ccze-color.c:455>:
+        stat()
+        S_ISREG()
+        fopen()
+        getline() <ssize_t getline (char **lineptr, size_t *n, FILE *stream) at /Volumes/trash/trash/ccze/src/ccze-compat.c:345>:
+            getdelim() <ssize_t getdelim (char **lineptr, size_t *n, int delim, FILE *stream) at /Volumes/trash/trash/ccze/src/ccze-compat.c:356>:
+                ccze_malloc() <void *ccze_malloc (size_t size) at /Volumes/trash/trash/ccze/src/ccze-compat.c:48>:
+                    malloc()
+                    exit()
+                getc()
+                ccze_realloc() <void *ccze_realloc (void *ptr, size_t size) at /Volumes/trash/trash/ccze/src/ccze-compat.c:57>:
+                    realloc()
+                    exit()
+        ccze_color_parse() <void ccze_color_parse (char *line) at /Volumes/trash/trash/ccze/src/ccze-color.c:352>:
+            strtok()
+            strstr()
+            strcmp()
+            COLOR_PAIR()
+            strdup()
+        free()
+        fclose()
+    getenv()
+    asprintf() <int asprintf (char **ptr, const char *fmt, ...) at /Volumes/trash/trash/ccze/src/ccze-compat.c:414>:
+        ccze_malloc() <void *ccze_malloc (size_t size) at /Volumes/trash/trash/ccze/src/ccze-compat.c:48>:
+            malloc()
+            exit()
+        va_start()
+        vsnprintf()
+        va_end()
+        ccze_realloc() <void *ccze_realloc (void *ptr, size_t size) at /Volumes/trash/trash/ccze/src/ccze-compat.c:57>:
+            realloc()
+            exit()
+    free()
+    printf()
+    ccze_dump_color_hidden() <int ccze_dump_color_hidden (int cidx) at /Volumes/trash/trash/ccze/src/ccze-dump.c:126>:
+    ccze_color() <int ccze_color (ccze_color_t idx) at /Volumes/trash/trash/ccze/src/ccze-color.c:308>:
+    strcpy()
+    ccze_color_lookup_name() <char *ccze_color_lookup_name (ccze_color_t color) at /Volumes/trash/trash/ccze/src/ccze-color.c:251>:
+    strlen()
+    memset()
+    strcat()
+    ccze_dump_color_get_attrib() <char *ccze_dump_color_get_attrib (int color) at /Volumes/trash/trash/ccze/src/ccze-dump.c:82>:
+        ccze_calloc() <void *ccze_calloc (size_t nmemb, size_t size) at /Volumes/trash/trash/ccze/src/ccze-compat.c:66>:
+            calloc()
+            exit()
+        strcat()
+    ccze_dump_color_to_name() <char *ccze_dump_color_to_name (int color) at /Volumes/trash/trash/ccze/src/ccze-dump.c:99>:
+        ccze_color_strip_attrib() <int ccze_color_strip_attrib (int color) at /Volumes/trash/trash/ccze/src/ccze-color.c:234>:
+        COLOR_PAIR()
+        ccze_color_to_name_simple() <char *ccze_color_to_name_simple (int color) at /Volumes/trash/trash/ccze/src/ccze-color.c:200>:
+        asprintf() <int asprintf (char **ptr, const char *fmt, ...) at /Volumes/trash/trash/ccze/src/ccze-compat.c:414>:
+            ccze_malloc() <void *ccze_malloc (size_t size) at /Volumes/trash/trash/ccze/src/ccze-compat.c:48>:
+                malloc()
+                exit()
+            va_start()
+            vsnprintf()
+            va_end()
+            ccze_realloc() <void *ccze_realloc (void *ptr, size_t size) at /Volumes/trash/trash/ccze/src/ccze-compat.c:57>:
+                realloc()
+                exit()
+    ccze_dump_color_comment() <char *ccze_dump_color_comment (int cidx) at /Volumes/trash/trash/ccze/src/ccze-dump.c:120>:
+    ccze_dump_color_to_idx() <int ccze_dump_color_to_idx (ccze_color_t color) at /Volumes/trash/trash/ccze/src/ccze-dump.c:132>:
+    ccze_cssbody_color() <char *ccze_cssbody_color (void) at /Volumes/trash/trash/ccze/src/ccze-color.c:476>:
+    ccze_calloc() <void *ccze_calloc (size_t nmemb, size_t size) at /Volumes/trash/trash/ccze/src/ccze-compat.c:66>:
+        calloc()
+        exit()
+    ccze_plugin_argv_init() <void ccze_plugin_argv_init (void) at /Volumes/trash/trash/ccze/src/ccze-plugin.c:111>:
+        ccze_calloc() <void *ccze_calloc (size_t nmemb, size_t size) at /Volumes/trash/trash/ccze/src/ccze-compat.c:66>:
+            calloc()
+            exit()
+    ccze_main() <void ccze_main (void) at /Volumes/trash/trash/ccze/src/ccze.c:565>:
+        ccze_color_init() <void ccze_color_init (void) at /Volumes/trash/trash/ccze/src/ccze-color.c:567>:
+            ccze_color_init_raw_ansi() <void ccze_color_init_raw_ansi (void) at /Volumes/trash/trash/ccze/src/ccze-color.c:482>:
+            COLOR_PAIR()
+        ccze_plugin_init() <void ccze_plugin_init (void) at /Volumes/trash/trash/ccze/src/ccze-plugin.c:102>:
+            ccze_calloc() <void *ccze_calloc (size_t nmemb, size_t size) at /Volumes/trash/trash/ccze/src/ccze-compat.c:66>:
+                calloc()
+                exit()
+        ccze_color_load() <void ccze_color_load (const char *fn) at /Volumes/trash/trash/ccze/src/ccze-color.c:455>:
+            stat()
+            S_ISREG()
+            fopen()
+            getline() <ssize_t getline (char **lineptr, size_t *n, FILE *stream) at /Volumes/trash/trash/ccze/src/ccze-compat.c:345>:
+                getdelim() <ssize_t getdelim (char **lineptr, size_t *n, int delim, FILE *stream) at /Volumes/trash/trash/ccze/src/ccze-compat.c:356>:
+                    ccze_malloc() <void *ccze_malloc (size_t size) at /Volumes/trash/trash/ccze/src/ccze-compat.c:48>:
+                        malloc()
+                        exit()
+                    getc()
+                    ccze_realloc() <void *ccze_realloc (void *ptr, size_t size) at /Volumes/trash/trash/ccze/src/ccze-compat.c:57>:
+                        realloc()
+                        exit()
+            ccze_color_parse() <void ccze_color_parse (char *line) at /Volumes/trash/trash/ccze/src/ccze-color.c:352>:
+                strtok()
+                strstr()
+                strcmp()
+                COLOR_PAIR()
+                strdup()
+            free()
+            fclose()
+        getenv()
+        asprintf() <int asprintf (char **ptr, const char *fmt, ...) at /Volumes/trash/trash/ccze/src/ccze-compat.c:414>:
+            ccze_malloc() <void *ccze_malloc (size_t size) at /Volumes/trash/trash/ccze/src/ccze-compat.c:48>:
+                malloc()
+                exit()
+            va_start()
+            vsnprintf()
+            va_end()
+            ccze_realloc() <void *ccze_realloc (void *ptr, size_t size) at /Volumes/trash/trash/ccze/src/ccze-compat.c:57>:
+                realloc()
+                exit()
+        free()
+        ccze_color_parse() <void ccze_color_parse (char *line) at /Volumes/trash/trash/ccze/src/ccze-color.c:352>:
+            strtok()
+            strstr()
+            strcmp()
+            COLOR_PAIR()
+            strdup()
+        initscr() <initscr at /Volumes/trash/trash/ccze/configure.ac:101>
+        signal()
+        sigwinch_handler() <void sigwinch_handler (int sig) at /Volumes/trash/trash/ccze/src/ccze.c:550> (R):
+            endwin()
+            refresh()
+            signal()
+            sigwinch_handler() <void sigwinch_handler (int sig) at /Volumes/trash/trash/ccze/src/ccze.c:550> (recursive: see 137)
+        nonl()
+        idlok()
+        scrollok()
+        leaveok()
+        start_color()
+        use_default_colors()
+        init_pair()
+        printf()
+        ccze_colors_to_css() <void ccze_colors_to_css (void) at /Volumes/trash/trash/ccze/src/ccze-color.c:293>:
+            ccze_color_to_css() <char *ccze_color_to_css (ccze_color_t cidx) at /Volumes/trash/trash/ccze/src/ccze-color.c:262>:
+                ccze_color_strip_attrib() <int ccze_color_strip_attrib (int color) at /Volumes/trash/trash/ccze/src/ccze-color.c:234>:
+                ccze_color() <int ccze_color (ccze_color_t idx) at /Volumes/trash/trash/ccze/src/ccze-color.c:308>:
+                COLOR_PAIR()
+                asprintf() <int asprintf (char **ptr, const char *fmt, ...) at /Volumes/trash/trash/ccze/src/ccze-compat.c:414>:
+                    ccze_malloc() <void *ccze_malloc (size_t size) at /Volumes/trash/trash/ccze/src/ccze-compat.c:48>:
+                        malloc()
+                        exit()
+                    va_start()
+                    vsnprintf()
+                    va_end()
+                    ccze_realloc() <void *ccze_realloc (void *ptr, size_t size) at /Volumes/trash/trash/ccze/src/ccze-compat.c:57>:
+                        realloc()
+                        exit()
+                ccze_color_to_name_css() <char *ccze_color_to_name_css (int color, ccze_color_t realcolor) at /Volumes/trash/trash/ccze/src/ccze-color.c:225>:
+                    ccze_color() <int ccze_color (ccze_color_t idx) at /Volumes/trash/trash/ccze/src/ccze-color.c:308>:
+                    PAIR_NUMBER()
+                ccze_color_lookup_name() <char *ccze_color_lookup_name (ccze_color_t color) at /Volumes/trash/trash/ccze/src/ccze-color.c:251>:
+                free()
+            printf()
+            free()
+        ccze_cssbody_color() <char *ccze_cssbody_color (void) at /Volumes/trash/trash/ccze/src/ccze-color.c:476>:
+        sigint_handler()
+        sighup_handler() <void sighup_handler (int sig) at /Volumes/trash/trash/ccze/src/ccze.c:558> (R):
+            signal()
+            sighup_handler() <void sighup_handler (int sig) at /Volumes/trash/trash/ccze/src/ccze.c:558> (recursive: see 174)
+        ccze_wordcolor_setup() <void ccze_wordcolor_setup (void) at /Volumes/trash/trash/ccze/src/ccze-wordcolor.c:261>:
+            pcre_compile()
+        ccze_plugin_load_all() <void ccze_plugin_load_all (void) at /Volumes/trash/trash/ccze/src/ccze-plugin.c:245>:
+            getenv()
+            asprintf() <int asprintf (char **ptr, const char *fmt, ...) at /Volumes/trash/trash/ccze/src/ccze-compat.c:414>:
+                ccze_malloc() <void *ccze_malloc (size_t size) at /Volumes/trash/trash/ccze/src/ccze-compat.c:48>:
+                    malloc()
+                    exit()
+                va_start()
+                vsnprintf()
+                va_end()
+                ccze_realloc() <void *ccze_realloc (void *ptr, size_t size) at /Volumes/trash/trash/ccze/src/ccze-compat.c:57>:
+                    realloc()
+                    exit()
+            scandir() <int scandir (const char *dir, struct dirent ***namelist, int (*select) (const struct dirent *), int (*compar) (const struct dirent **, const struct dirent **)) at /Volumes/trash/trash/ccze/src/ccze-compat.c:288>:
+                opendir()
+                readdir()
+                ccze_realloc() <void *ccze_realloc (void *ptr, size_t size) at /Volumes/trash/trash/ccze/src/ccze-compat.c:57>:
+                    realloc()
+                    exit()
+                strlen()
+                ccze_malloc() <void *ccze_malloc (size_t size) at /Volumes/trash/trash/ccze/src/ccze-compat.c:48>:
+                    malloc()
+                    exit()
+                memcpy()
+                closedir()
+                qsort()
+            alphasort() <int alphasort (const struct dirent **a, const struct dirent **b) at /Volumes/trash/trash/ccze/src/ccze-compat.c:334>:
+                strcmp()
+            free()
+        ccze_plugin_load() <void ccze_plugin_load (const char *name) at /Volumes/trash/trash/ccze/src/ccze-plugin.c:189>:
+            getenv()
+            asprintf() <int asprintf (char **ptr, const char *fmt, ...) at /Volumes/trash/trash/ccze/src/ccze-compat.c:414>:
+                ccze_malloc() <void *ccze_malloc (size_t size) at /Volumes/trash/trash/ccze/src/ccze-compat.c:48>:
+                    malloc()
+                    exit()
+                va_start()
+                vsnprintf()
+                va_end()
+                ccze_realloc() <void *ccze_realloc (void *ptr, size_t size) at /Volumes/trash/trash/ccze/src/ccze-compat.c:57>:
+                    realloc()
+                    exit()
+            access()
+            free()
+        ccze_plugin_load_all_builtins()
+        ccze_plugin_finalise() <void ccze_plugin_finalise (void) at /Volumes/trash/trash/ccze/src/ccze-plugin.c:266>:
+        ccze_plugins() <ccze_plugin_t **ccze_plugins (void) at /Volumes/trash/trash/ccze/src/ccze-plugin.c:272>:
+        endwin()
+        fprintf()
+        exit()
+        ccze_plugin_argv_finalise() <void ccze_plugin_argv_finalise (void) at /Volumes/trash/trash/ccze/src/ccze-plugin.c:401>:
+            free()
+        ccze_plugin_list_fancy() <int ccze_plugin_list_fancy (void) at /Volumes/trash/trash/ccze/src/ccze-plugin.c:423>:
+            printf()
+        ccze_plugin_setup() <void ccze_plugin_setup (void) at /Volumes/trash/trash/ccze/src/ccze-plugin.c:278>:
+        getline() <ssize_t getline (char **lineptr, size_t *n, FILE *stream) at /Volumes/trash/trash/ccze/src/ccze-compat.c:345>:
+            getdelim() <ssize_t getdelim (char **lineptr, size_t *n, int delim, FILE *stream) at /Volumes/trash/trash/ccze/src/ccze-compat.c:356>:
+                ccze_malloc() <void *ccze_malloc (size_t size) at /Volumes/trash/trash/ccze/src/ccze-compat.c:48>:
+                    malloc()
+                    exit()
+                getc()
+                ccze_realloc() <void *ccze_realloc (void *ptr, size_t size) at /Volumes/trash/trash/ccze/src/ccze-compat.c:57>:
+                    realloc()
+                    exit()
+        strchr()
+        sscanf()
+        strdup()
+        strlen()
+        ccze_plugin_run() <void ccze_plugin_run (ccze_plugin_t **pluginset, char *subject, size_t subjlen, char **rest, ccze_plugin_type_t type, int *handled, int *status) at /Volumes/trash/trash/ccze/src/ccze-plugin.c:315>:
+        ccze_wordcolor_process() <void ccze_wordcolor_process (const char *msg, int wcol, int slookup) at /Volumes/trash/trash/ccze/src/ccze-wordcolor.c:215>:
+            strdup()
+            ccze_addstr() <void ccze_addstr (ccze_color_t col, const char *str) at /Volumes/trash/trash/ccze/src/ccze.c:502>:
+                ccze_addstr_internal() <void ccze_addstr_internal (ccze_color_t col, const char *str, int enc) at /Volumes/trash/trash/ccze/src/ccze.c:431>:
+                    ccze_str_htmlencode() <char *ccze_str_htmlencode (const char *src) at /Volumes/trash/trash/ccze/src/ccze.c:388>:
+                        ccze_malloc() <void *ccze_malloc (size_t size) at /Volumes/trash/trash/ccze/src/ccze-compat.c:48>:
+                            malloc()
+                            exit()
+                        strlen()
+                    strdup()
+                    printf()
+                    ccze_color_lookup_name() <char *ccze_color_lookup_name (ccze_color_t color) at /Volumes/trash/trash/ccze/src/ccze-color.c:251>:
+                    free()
+                    ccze_color() <int ccze_color (ccze_color_t idx) at /Volumes/trash/trash/ccze/src/ccze-color.c:308>:
+                    attrset()
+                    addstr()
+            free()
+            strstr()
+            xstrdup() <char *xstrdup (const char *str) at /Volumes/trash/trash/ccze/src/ccze.c:179>:
+                strdup()
+            ccze_strbrk() <char *ccze_strbrk (char *str, char delim) at /Volumes/trash/trash/ccze/src/ccze.c:152>:
+                strlen()
+            ccze_wordcolor_process_one() <void ccze_wordcolor_process_one (char *word, int slookup) at /Volumes/trash/trash/ccze/src/ccze-wordcolor.c:72>:
+                pcre_exec()
+                strlen()
+                pcre_get_substring()
+                free()
+                strndup() <char *strndup (const char *s, size_t size) at /Volumes/trash/trash/ccze/src/ccze-compat.c:76>:
+                    ccze_malloc() <void *ccze_malloc (size_t size) at /Volumes/trash/trash/ccze/src/ccze-compat.c:48>:
+                        malloc()
+                        exit()
+                    memcpy()
+                strchr()
+                ccze_addstr() <void ccze_addstr (ccze_color_t col, const char *str) at /Volumes/trash/trash/ccze/src/ccze.c:502>:
+                    ccze_addstr_internal() <void ccze_addstr_internal (ccze_color_t col, const char *str, int enc) at /Volumes/trash/trash/ccze/src/ccze.c:431>:
+                        ccze_str_htmlencode() <char *ccze_str_htmlencode (const char *src) at /Volumes/trash/trash/ccze/src/ccze.c:388>:
+                            ccze_malloc() <void *ccze_malloc (size_t size) at /Volumes/trash/trash/ccze/src/ccze-compat.c:48>:
+                                malloc()
+                                exit()
+                            strlen()
+                        strdup()
+                        printf()
+                        ccze_color_lookup_name() <char *ccze_color_lookup_name (ccze_color_t color) at /Volumes/trash/trash/ccze/src/ccze-color.c:251>:
+                        free()
+                        ccze_color() <int ccze_color (ccze_color_t idx) at /Volumes/trash/trash/ccze/src/ccze-color.c:308>:
+                        attrset()
+                        addstr()
+                getservbyname()
+                getprotobyname()
+                getpwnam()
+                strstr()
+            ccze_space() <void ccze_space (void) at /Volumes/trash/trash/ccze/src/ccze.c:508>:
+                ccze_addstr_internal() <void ccze_addstr_internal (ccze_color_t col, const char *str, int enc) at /Volumes/trash/trash/ccze/src/ccze.c:431>:
+                    ccze_str_htmlencode() <char *ccze_str_htmlencode (const char *src) at /Volumes/trash/trash/ccze/src/ccze.c:388>:
+                        ccze_malloc() <void *ccze_malloc (size_t size) at /Volumes/trash/trash/ccze/src/ccze-compat.c:48>:
+                            malloc()
+                            exit()
+                        strlen()
+                    strdup()
+                    printf()
+                    ccze_color_lookup_name() <char *ccze_color_lookup_name (ccze_color_t color) at /Volumes/trash/trash/ccze/src/ccze-color.c:251>:
+                    free()
+                    ccze_color() <int ccze_color (ccze_color_t idx) at /Volumes/trash/trash/ccze/src/ccze-color.c:308>:
+                    attrset()
+                    addstr()
+                ccze_addstr() <void ccze_addstr (ccze_color_t col, const char *str) at /Volumes/trash/trash/ccze/src/ccze.c:502>:
+                    ccze_addstr_internal() <void ccze_addstr_internal (ccze_color_t col, const char *str, int enc) at /Volumes/trash/trash/ccze/src/ccze.c:431>:
+                        ccze_str_htmlencode() <char *ccze_str_htmlencode (const char *src) at /Volumes/trash/trash/ccze/src/ccze.c:388>:
+                            ccze_malloc() <void *ccze_malloc (size_t size) at /Volumes/trash/trash/ccze/src/ccze-compat.c:48>:
+                                malloc()
+                                exit()
+                            strlen()
+                        strdup()
+                        printf()
+                        ccze_color_lookup_name() <char *ccze_color_lookup_name (ccze_color_t color) at /Volumes/trash/trash/ccze/src/ccze-color.c:251>:
+                        free()
+                        ccze_color() <int ccze_color (ccze_color_t idx) at /Volumes/trash/trash/ccze/src/ccze-color.c:308>:
+                        attrset()
+                        addstr()
+        ccze_newline() <void ccze_newline (void) at /Volumes/trash/trash/ccze/src/ccze.c:368>:
+            printf()
+            addstr()
+        refresh()
+    ccze_wordcolor_shutdown() <void ccze_wordcolor_shutdown (void) at /Volumes/trash/trash/ccze/src/ccze-wordcolor.c:306>:
+        free()
+    ccze_plugin_shutdown() <void ccze_plugin_shutdown (void) at /Volumes/trash/trash/ccze/src/ccze-plugin.c:294>:
+        free()
+        dlclose()
+    sigint_handler()
+    ccze_colors_to_css() <void ccze_colors_to_css (void) at /Volumes/trash/trash/ccze/src/ccze-color.c:293>:
+        ccze_color_to_css() <char *ccze_color_to_css (ccze_color_t cidx) at /Volumes/trash/trash/ccze/src/ccze-color.c:262>:
+            ccze_color_strip_attrib() <int ccze_color_strip_attrib (int color) at /Volumes/trash/trash/ccze/src/ccze-color.c:234>:
+            ccze_color() <int ccze_color (ccze_color_t idx) at /Volumes/trash/trash/ccze/src/ccze-color.c:308>:
+            COLOR_PAIR()
+            asprintf() <int asprintf (char **ptr, const char *fmt, ...) at /Volumes/trash/trash/ccze/src/ccze-compat.c:414>:
+                ccze_malloc() <void *ccze_malloc (size_t size) at /Volumes/trash/trash/ccze/src/ccze-compat.c:48>:
+                    malloc()
+                    exit()
+                va_start()
+                vsnprintf()
+                va_end()
+                ccze_realloc() <void *ccze_realloc (void *ptr, size_t size) at /Volumes/trash/trash/ccze/src/ccze-compat.c:57>:
+                    realloc()
+                    exit()
+            ccze_color_to_name_css() <char *ccze_color_to_name_css (int color, ccze_color_t realcolor) at /Volumes/trash/trash/ccze/src/ccze-color.c:225>:
+                ccze_color() <int ccze_color (ccze_color_t idx) at /Volumes/trash/trash/ccze/src/ccze-color.c:308>:
+                PAIR_NUMBER()
+            ccze_color_lookup_name() <char *ccze_color_lookup_name (ccze_color_t color) at /Volumes/trash/trash/ccze/src/ccze-color.c:251>:
+            free()
+        printf()
+        free()
