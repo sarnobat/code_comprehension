@@ -1,6 +1,10 @@
 # code_comprehension
 
+### Cassandra
 
+* `Cql_Parser.java` - largest file in frst commit
+
+# 2024
 ## Tomcat
 2024-03
 
